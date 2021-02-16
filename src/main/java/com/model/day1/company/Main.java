@@ -518,7 +518,7 @@ public class Main {
 // 39. Wypisz jaki produkt poza paliwem cieszy się największą popularnością (zwróć go) (find first)
 // 40. Znajdź produkty które były kupowane zarówno w kilogramach jak i w sztukach
 // 40. Wymyśl 5 ciekawych zapytań i spróbuj je zrealizować. Najciekawsze polecenie otrzyma nagrodę-niespodziankę z Baltimore :P
-        company_8_wylistuj(companies);
+        company_9_wylistuj(companies);
     }
 
     //#################################################
@@ -601,5 +601,15 @@ public class Main {
             company.setEmployees(i + 1);
             System.out.println("Firma : " + company.getName() + " Ilość pracowników po dodaniem " + company.getEmployees());
         }
+    }
+
+    // 9. ** Zwróć MAPĘ w której kluczem jest nazwa firmy, a wartością ilość pracowników w tej firmie (https://howtodoinjava.com/java8/collect-stream-to-map/)
+    private static void company_9_wylistuj(List<Company> companies) {
+        Map<String, List<Company>> companyList = companies.stream()
+                .collect(Collectors.groupingBy(Company::getName));
+
+
+        System.out.println(companyList);
+
     }
 }
