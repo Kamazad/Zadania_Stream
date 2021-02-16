@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4894e7a-cd32-46d8-9204-e93ad0674322" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="b4894e7a-cd32-46d8-9204-e93ad0674322" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/model/day1/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/model/day1/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/model/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/model/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/model/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/model/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/model/day1/company/Company.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/model/day1/company/Company.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/model/day1/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/model/day1/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/model/day1/company/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/model/day1/company/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/model/day1/company/Purchase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/model/day1/company/Purchase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/model/day1/player/Arcade.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/model/day1/player/Arcade.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/model/day1/player/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/model/day1/player/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/model/day1/player/Score.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/model/day1/player/Score.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/model/day2/coffeshop/CoffeeAddition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/model/day2/coffeshop/CoffeeAddition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/model/day2/coffeshop/Magazyn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/model/day2/coffeshop/Magazyn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/model/day2/coffeshop/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/model/day2/coffeshop/Main.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/model/day1/company/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="535" column="33" lean-forward="true" selection-start-line="535" selection-start-column="33" selection-end-line="535" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#company_13_najwiecej_hajsu#0;class#Main#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -112,18 +113,12 @@
       </list>
     </option>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1919" />
     <option name="width" value="1922" />
     <option name="height" value="1200" />
   </component>
+  <component name="ProjectId" id="1oQYtrwW4wkDVQPAQ2kfVfmBicF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -229,14 +224,20 @@
       </pane>
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562175695820" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -247,18 +248,6 @@
       <recent name="com.model.player" />
       <recent name="com.model" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Application.Main (2)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -334,6 +323,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -412,6 +402,32 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">

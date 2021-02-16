@@ -2,6 +2,7 @@ package com.model.day1.company;
 
 import java.time.LocalDate;
 import java.util.*;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -517,5 +518,88 @@ public class Main {
 // 39. Wypisz jaki produkt poza paliwem cieszy się największą popularnością (zwróć go) (find first)
 // 40. Znajdź produkty które były kupowane zarówno w kilogramach jak i w sztukach
 // 40. Wymyśl 5 ciekawych zapytań i spróbuj je zrealizować. Najciekawsze polecenie otrzyma nagrodę-niespodziankę z Baltimore :P
+        company_8_wylistuj(companies);
+    }
+
+    //#################################################
+    //rozwiązania
+    // 1. Wylistuj (system out println) wszystkie firmy
+    private static void company_1_wylistuj(List<Company> companies) {
+        for (Company x : companies) {
+            System.out.println(x);
+        }
+    }
+
+    // 2. Wylistuj wszystkie firmy które są z Detroit
+    private static void company_2_wylistuj(List<Company> companies) {
+        List<Company> companyList = companies.stream()
+                .filter(company -> company.getCityHeadquarters().equals("Detroit"))
+                .collect(Collectors.toList());
+        company_1_wylistuj(companyList);
+    }
+
+    // 3. Wylistuj wszystkie firmy z Londynu, posortuj je po ilości pracowników (rosnąco).
+    private static void company_3_wylistuj(List<Company> companies) {
+        List<Company> companyList = companies.stream()
+                .filter(company -> company.getCityHeadquarters().equals("London"))
+                .sorted(Comparator.comparing(company -> company.getEmployees()))
+//                .sorted(Comparator.comparingInt(Company::getEmployees))
+                .collect(Collectors.toList());
+        company_1_wylistuj(companyList);
+    }
+
+    // 4. Wylistuj wszystkie firmy z Warszawy. Posortuj je po ilości zakupów (rosnąco) i ilości pracowników (malejąco).
+    private static void company_4_wylistuj(List<Company> companies) {
+        List<Company> companyList = companies.stream()
+                .filter(company -> company.getCityHeadquarters().equals("Warsaw"))  //Sprawdzone na London
+                .sorted(Comparator.comparing(company -> company.getPurchaseList().size() | company.getEmployees()))
+//                .sorted(Comparator.comparing(company -> company.getEmployees()))
+                .collect(Collectors.toList());
+        company_1_wylistuj(companyList);
+    }
+
+    // 5. Zwróć firmę z największą ilością pracowników, która pochodzi z Kijowa.
+    private static void company_5_wylistuj(List<Company> companies) {
+        Company company = companies.stream()
+                .filter(companyX -> companyX.getCityHeadquarters().equals("Kijev"))
+                .max(Comparator.comparing(companyX -> companyX.getEmployees()))
+                .get();
+
+        System.out.println("Najwięcej pracowników w Kijev posiada ");
+        System.out.println("Firma : " + company.getName() + "\n bo aż : " + company.getEmployees() + " pracowników");
+    }
+
+    //     6. Zwróć firmę z najkrótszą nazwą
+    private static void company_6_wylistuj(List<Company> companies) {
+        Company company = companies.stream()
+                .sorted(Comparator.comparing(companyX -> companyX.getName().length()))
+                .findFirst()
+                .get();
+
+        System.out.println("Firma z najkrótszą nazwą to :" + company.getName());
+    }
+
+    // 7. Zwróć firmę która nie pochodzi z Kijowa, Londynu i Detroit, która ma najmniej kupionych produktów.
+    private static void company_7_wylistuj(List<Company> companies) {
+        Company company = companies.stream()
+                .filter(companyX -> !companyX.getCityHeadquarters().equals("London") | !companyX.getCityHeadquarters().equals("Detroit") | !companyX.getCityHeadquarters().equals("Kijev"))
+                .min(Comparator.comparing(companyX -> companyX.getPurchaseList().size()))
+                .get();
+
+        System.out.println("Firma z najmniejszą ilością zakupionych produktów (!London || !Kijev || !Detroit) to : " + company.getName());
+    }
+
+    // 8. Każdej firmie dodaj po 1 pracowniku, jeśli pochodzi z Kijowa lub Detroit
+    private static void company_8_wylistuj(List<Company> companies) {
+        List<Company> companyList = companies.stream()
+                .filter(company -> company.getCityHeadquarters().equals("Detroit") | company.getCityHeadquarters().equals("Kijev"))
+                .collect(Collectors.toList());
+
+        for (Company company : companyList) {
+            System.out.println("Firma : " + company.getName() + " Ilość pracowników przed dodaniem " + company.getEmployees());
+            int i = company.getEmployees();
+            company.setEmployees(i + 1);
+            System.out.println("Firma : " + company.getName() + " Ilość pracowników po dodaniem " + company.getEmployees());
+        }
     }
 }
