@@ -609,7 +609,9 @@ public class Main {
                 .collect(Collectors.groupingBy(Company::getName));
 
 
-        System.out.println(companyList);
+        for (Map.Entry<String , List<Company>> compan : companyList.entrySet()) {
+            System.out.println(compan.getKey() + " " + compan.getValue());
+        }
 
     }
 }
