@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4894e7a-cd32-46d8-9204-e93ad0674322" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/model/day1/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/model/day1/company/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/model/day1/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/model/day1/company/Main.class" afterDir="false" />
     </list>
@@ -408,6 +409,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>

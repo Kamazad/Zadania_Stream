@@ -518,7 +518,7 @@ public class Main {
 // 39. Wypisz jaki produkt poza paliwem cieszy się największą popularnością (zwróć go) (find first)
 // 40. Znajdź produkty które były kupowane zarówno w kilogramach jak i w sztukach
 // 40. Wymyśl 5 ciekawych zapytań i spróbuj je zrealizować. Najciekawsze polecenie otrzyma nagrodę-niespodziankę z Baltimore :P
-        company_9_wylistuj(companies);
+        company_11_wylistuj(companies);
     }
 
     //#################################################
@@ -603,7 +603,8 @@ public class Main {
         }
     }
 
-    // 9. ** Zwróć MAPĘ w której kluczem jest nazwa firmy, a wartością ilość pracowników w tej firmie (https://howtodoinjava.com/java8/collect-stream-to-map/)
+    // 9. ** Zwróć MAPĘ w której kluczem jest nazwa firmy, a wartością ilość pracowników
+    // w tej firmie (https://howtodoinjava.com/java8/collect-stream-to-map/)
     private static void company_9_wylistuj(List<Company> companies) {
         Map<String, List<Company>> companyList = companies.stream()
                 .collect(Collectors.groupingBy(Company::getName));
@@ -613,5 +614,24 @@ public class Main {
             System.out.println(compan.getKey() + " " + compan.getValue());
         }
 
+    }
+    // 10.** Zwróć Mapę w której kluczem jest miejscowość a wartością jest LISTA FIRM z
+    // tamtej miejscowości (Map<String, List<Company>) (https://stackoverflow.com/questions/24917053/collecting-hashmapstring-liststring-java-8)
+    private static void company_10_wylistuj(List<Company> companies){
+        Map<String, List<Company>> companyList = companies.stream()
+                .collect(Collectors.groupingBy(Company::getCityHeadquarters));
+
+        for (Map.Entry<String, List<Company>> compan : companyList.entrySet()){
+            System.out.println(compan.getKey() + " " + compan.getValue());
+        }
+    }
+//    11. Zwróć firmę która dokonała zakupów na największą kwotę
+//        company_11_zakupy_najwieksze(companies);
+    private static void company_11_wylistuj(List<Company> companies){
+        Optional<Company> company = companies.stream()
+                .max(Comparator.comparingDouble(companyX -> companyX.getPurchaseList().stream()
+                        .mapToDouble(zakup -> zakup.getQuantity() * zakup.getProduct().getPrice()).sum()));
+
+        System.out.println(company);
     }
 }
